@@ -331,11 +331,85 @@
   justify-content:center;
 }
 }
+/* OFFER */
+  .offer__text h2{
+          font-size:4rem;
+          font-size:2.5rem;
+          color:var(--primary);
+          font-weight:500;
+          margin-bottom:3rem;         
+  }
+  .offer__text p{
+      font-size:1.5rem;
+      font-weight:600;  
+  }
+  .offer__text a{
+      display:flex;
+      flex-direction:column;
+      text-align:center;
+      align-items:center;
+      padding:1.5rem;
+      weight:50%;
+  }
+  .offer__text ul.price li{
+      justify-content:center;
+  }
+.offer{
+  background:#f7f7f7;
+  background-size:cover;
+  height:70vh;
+  background-position:center center;
+  position:relative;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+.offer.container{
+  padding:2.5rem;
+}
+.offer__price{
+  padding:2.5rem 4rem;
+}
+.offer__price h3:first-child{
+  color:var(--secondary);
+  font-weight:600;
+}
+.offer__text p{
+  max-width:55rem;
+  font-size:1.5rem;
+  font-weight:600;
+  margin-bottom:3rem;
+  gap:.5rem;
+  font-style:normal;
+}
+
+.offer__price__bot h3{
+  position:absolute;
+  color:var(--primary);
+  right:-80;
+  font-weight:900;
+  font-size:16rem;
+}
+.offer__price__bot h4:first-child{
+   display:flex;
+   font-size:3rem;
+   align-items:center;
+   font-weight:700;
+}
+.offer_cents h4:first-child{
+  color:var(--secondary);
+  font-weight:800;
+}
+.offer_cents h4:nth-child(2){
+  color:var(--secondary);
+  font-weight:600;
+}
 /* REPEATABLE PATTERNS */
 :root{
     --light:#ffffff;
     --dark:#2b2b2b;
     --primary:#134A8C;
+    --secondary:#E8751A;
 }
 .btn{
   display:inline-block;
@@ -360,4 +434,9 @@
   color:var(--primary);
   font-size:1.5rem;
   font-weight:600;
+}
+.btn.bg--light:hover{
+  background:var(--primary);
+  color:var(--light);
+  transition:.5s ease;
 }
